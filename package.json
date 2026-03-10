@@ -1,0 +1,20 @@
+{
+  "name": "brain-ingester",
+  "version": "1.0.0",
+  "description": "Replaces Zapier pipeline — ingests Granola meeting docs into GCS for the Unknown Brain Eventarc pipeline",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^7.9.0",
+    "@google-cloud/secret-manager": "^5.6.0",
+    "@google-cloud/storage": "^7.14.0",
+    "express": "^4.21.0"
+  }
+}
