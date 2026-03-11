@@ -1,6 +1,6 @@
 import express from 'express';
 import { getAccessToken } from './auth.js';
-import { fetchDocuments, fetchFolderDocuments, fetchFolders, fetchTranscript } from './granola.js';
+import { fetchDocuments, fetchFolderDocuments, fetchFolders, fetchFolderDetail, fetchTranscript } from './granola.js';
 import { buildMeetingMarkdown } from './converter.js';
 import { getExistingMeetingIds } from './bigquery.js';
 import { uploadMeeting } from './gcs.js';
