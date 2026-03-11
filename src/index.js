@@ -33,7 +33,9 @@ app.get('/folders', async (_req, res) => {
       folders: folders.map(f => ({
         id: f.id,
         name: f.name || f.title || 'Untitled',
-        documentCount: (f.documents || f.document_ids || []).length,
+        memberCount: (f.members || []).length,
+        visibility: f.visibility || 'unknown',
+        workspace: f.workspace_display_name || null,
       })),
     });
   } catch (err) {
