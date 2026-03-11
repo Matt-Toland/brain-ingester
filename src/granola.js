@@ -2,8 +2,8 @@ import { getAccessToken } from './auth.js';
 
 const BASE_HEADERS = {
   'Content-Type': 'application/json',
-  'User-Agent': 'Granola/5.354.0',
-  'X-Client-Version': '5.354.0',
+  'User-Agent': 'Granola/7.57.0',
+  'X-Client-Version': '7.57.0',
   'Accept-Encoding': 'gzip',
 };
 
